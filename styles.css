@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+:root{
+	--fonte-titulo:"Young Serif";
+	--fonte-texto:"Outfit";
+	--cor-white:hsl(0, 0%, 100%);
+	--cor-rose-white:hsl(330, 100%, 98%);
+	--cor-eggshel:hsl(30, 54%, 90%);
+	--cor-light-grey:hsl(30, 18%, 87%);
+	--cor-wenge-brown:hsl(30, 10%, 34%);
+	--cor-dark-charcoal:hsl(24, 5%, 18%);
+	--cor-Nutmeg:hsl(14, 45%, 36%);
+	--cor-dark-raspberry:hsl(332, 51%, 32%);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: var(--fonte-texto);
+	font-weight: 400;
+	font-size: 0.7rem;
+	background: var(--cor-eggshel);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+main{
+	width: 40%;
+	background-color: var(--cor-white);
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	border-radius: 30px;
+	margin-top: 5%;
+}
+section{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+img{
+	border-radius: 18px;
+	width: 100%;
+	box-sizing: border-box;
+}
+h1, h2, h3{
+	font-family: var(--fonte-titulo);
+	font-weight: 400;
+}
+h1{
+	margin: 10px 0 ;
+	font-size: 1.75rem;
+	color: var(--cor-dark-charcoal);
+}
+h2{
+	font-size: 1.5rem;
+	color: var(--cor-Nutmeg);
+}
+h3{
+	font-size: 1.1rem;
+	color: var(--cor-dark-raspberry);
+}
+p, li{
+	color: var(--cor-dark-charcoal);
+}
+li{
+	padding: 0 10px;
+	list-style-position: inside;
+}
+table{
+
+}
+tr{
+	display: flex;
+	
+
+}
+td strong{
+	color: var(--cor-Nutmeg);
+	font-weight: bold;
+}
+.preparation{
+	background-color: var(--cor-rose-white);
+	padding: 1em;
+	border-radius: 8px;
+}
+.preparation li{
+	margin: 0.5em;
+}
