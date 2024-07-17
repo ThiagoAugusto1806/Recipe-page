@@ -47,6 +47,7 @@ img{
 h1, h2, h3{
 	font-family: var(--fonte-titulo);
 	font-weight: 400;
+	margin: .5em 0;
 }
 h1{
 	margin: 10px 0 ;
@@ -63,19 +64,36 @@ h3{
 }
 p, li{
 	color: var(--cor-dark-charcoal);
+	margin-bottom:1em ;
 }
 li{
 	padding: 0 10px;
-	list-style-position: inside;
+	list-style-position:inside;
 }
-table{
-
+.Instructions__item{
+	margin-left: 1.5em;
+	list-style-position: initial;
+}
+li::marker{
+	color:  var(--cor-Nutmeg);
+	font-weight: bold;
+	margin-right: 1rem;
+}
+.preparation li::marker{
+	color:  var(--cor-dark-raspberry);
 }
 tr{
-	display: flex;
-	
-
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom: 1px solid var(--cor-light-grey);
 }
+td{
+	padding: 1em 0 1em 1em;
+}
+tr:last-child{
+	border: 0px;
+}
+
 td strong{
 	color: var(--cor-Nutmeg);
 	font-weight: bold;
@@ -87,4 +105,54 @@ td strong{
 }
 .preparation li{
 	margin: 0.5em;
+}
+.attribution { 
+	font-size: 11px;
+	text-align: center; 
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+	color: var(--cor-Nutmeg);
+}
+.attribution a:hover{
+	color: var(--cor-dark-raspberry);
+}
+footer{
+	display: none;
+	background-color: var(--cor-eggshel);
+	padding: 1rem;
+	color: var(--cor-Nutmeg);
+}
+.mobile{
+	display:none;
+}
+.desktop{
+	display: block;
+}
+
+@media screen and (max-width: 400px){
+	main{
+		width: 100vw;
+		margin: 0;
+		padding: 0;
+	}
+	img{
+		border-radius: 0px;
+	}
+	h1, h2, h3, p, ol, ul, table{
+		margin: 0 20px;
+	}
+	.preparation{
+		margin: 20px;
+	}
+	footer{
+		display: block;
+	}
+	.mobile{
+		display:block;
+	}
+	.desktop {
+		display: none;
+	}
 }
